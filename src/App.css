@@ -1,0 +1,12 @@
+.modal {
+	position: fixed;
+	top: 30%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	background-color: greenyellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
