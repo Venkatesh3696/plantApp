@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Thanking = () => {
@@ -10,7 +9,7 @@ const Thanking = () => {
 				Congratulations <br /> Order Placed!
 			</h1>
 			<img
-				src='./src/assets/images/plantImages/order_placed.png'
+				src='/images/plantImages/order_placed.png'
 				alt='order placed'
 				className='w-32'
 			/>
