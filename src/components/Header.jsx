@@ -1,16 +1,18 @@
-import React from 'react';
+import { CgProfile } from 'react-icons/cg';
+import { FaCartShopping } from 'react-icons/fa6';
 
 const Header = () => {
 	return (
 		<header className='flex w-full justify-between items-center sticky px-10 h-20'>
-			<div className='flex'>
+			<div className='flex items-center gap-3'>
 				<img
-					src='.src/assets/images/logo.png'
+					src='/images/logo.png'
 					alt='logo'
+					className='h-12'
 				/>
 				<h1>ChapterOne</h1>
 			</div>
-			<ul className='flex gap-2'>
+			<ul className='flex gap-4'>
 				<li>
 					<a href='#'>Home</a>
 				</li>
@@ -33,9 +35,15 @@ const Header = () => {
 					<a href='#'>FAQs</a>
 				</li>
 			</ul>
-			<div>
-				<button>My profile</button>
-				<button>Cart</button>
+			<div className='flex gap-3'>
+				<div className='flex flex-col items-center'>
+					<CgProfile />
+					<button>My profile</button>
+				</div>
+				<div className='flex flex-col  items-center'>
+					<FaCartShopping />
+					<button>Cart</button>
+				</div>
 			</div>
 		</header>
 	);

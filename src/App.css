@@ -4,7 +4,9 @@
 	left: 25%;
 	width: 50%;
 	height: 50%;
-	background-color: greenyellow;
+	background-color: #808080;
+	border-radius: 20px;
+	gap: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

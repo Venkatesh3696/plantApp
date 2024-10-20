@@ -1,11 +1,12 @@
 import React from 'react';
+import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const PlantCard = ({ details, handleAddToCart, setSelectedProduct }) => {
 	console.log(handleAddToCart);
 
 	return (
-		<li className='w-72 my-4 '>
+		<li className='w-72 my-4 border-2 rounded p-2'>
 			<div>
 				<img
 					src={details.imageUrl}
@@ -21,7 +22,17 @@ const PlantCard = ({ details, handleAddToCart, setSelectedProduct }) => {
 			<div>
 				<h2>{details.title}</h2>
 				<p>{details.description} </p>
-				<p>{details.rating}</p>
+				<div className='flex items-center gap-4 '>
+					<div className='flex '>
+						<FaStar />
+						<FaStar />
+						<FaStar />
+						<FaStar />
+						<FaStar />
+					</div>
+
+					<p>{details.rating}</p>
+				</div>
 				<p>
 					<span className='line-through mr-3'>₹ {details.price}</span>
 					<span className='text-bold'>₹ {details.salePrice}</span>

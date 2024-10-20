@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NurseryCard from '../components/nursery/NurseryCard';
@@ -10,37 +10,37 @@ const nurseriesData = [
 	{
 		id: 1,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_01.png',
+		imageUrl: '/images/nurseryImages/image_01.png',
 	},
 	{
 		id: 2,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_02.png',
+		imageUrl: '/images/nurseryImages/image_02.png',
 	},
 	{
 		id: 3,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_03.png',
+		imageUrl: '/images/nurseryImages/image_03.png',
 	},
 	{
 		id: 4,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_04.png',
+		imageUrl: '/images/nurseryImages/image_04.png',
 	},
 	{
 		id: 5,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_05.png',
+		imageUrl: '/images/nurseryImages/image_05.png',
 	},
 	{
 		id: 6,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_06.png',
+		imageUrl: '/images/nurseryImages/image_06.png',
 	},
 	{
 		id: 7,
 		description: 'Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum',
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/nurseryImages/image_07.png',
 	},
 ];
 
@@ -52,106 +52,106 @@ const products = [
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_001.jpeg',
 	},
 	{
 		id: 2,
-		name: 'Product 1',
+		name: 'Product 2',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_002.jpeg',
 	},
 	{
 		id: 3,
-		name: 'Product 1',
+		name: 'Product 3',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_003.jpeg',
 	},
 	{
 		id: 4,
-		name: 'Product 1',
+		name: 'Product 4',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_001.jpeg',
 	},
 	{
 		id: 5,
-		name: 'Product 1',
+		name: 'Product 5',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_002.jpeg',
 	},
 	{
 		id: 6,
-		name: 'Product 1',
+		name: 'Product 6',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_003.jpeg',
 	},
 	{
 		id: 7,
-		name: 'Product 1',
+		name: 'Product 7',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_001.jpeg',
 	},
 	{
 		id: 8,
-		name: 'Product 1',
+		name: 'Product 8',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_002.jpeg',
 	},
 	{
 		id: 9,
-		name: 'Product 1',
+		name: 'Product 9',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_003.jpeg',
 	},
 	{
 		id: 10,
-		name: 'Product 1',
+		name: 'Product 10',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_001.jpeg',
 	},
 	{
 		id: 11,
-		name: 'Product 1',
+		name: 'Product 11',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_002.jpeg',
 	},
 	{
 		id: 12,
-		name: 'Product 1',
+		name: 'Product 12',
 		description: 'Indoor Plant, Low maintenance',
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_003.jpeg',
 	},
 	{
 		id: 13,
@@ -160,7 +160,7 @@ const products = [
 		price: 359,
 		salePrice: 299,
 		rating: 4.5,
-		imageUrl: './src/assets/images/nurseryImages/image_07.png',
+		imageUrl: '/images/plantImages/image_001.jpeg',
 	},
 ];
 
@@ -182,13 +182,18 @@ const PlantsAndPots = () => {
 	return (
 		<div className='text-left'>
 			<Header />
+			<hr />
 			<div className='px-24'>
 				<div>
 					<input type='text' />
 				</div>
-				<ul>
-					<li>Plants</li>
-					<li>Pots</li>
+				<ul className='flex gap-5'>
+					<li className='px-3 py-2 bg-green-800 text-white border '>
+						Plants
+					</li>
+					<li className='px-3 py-2 border-2 border-green-800'>
+						Pots
+					</li>
 				</ul>
 				<p>
 					Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum
@@ -212,10 +217,10 @@ const PlantsAndPots = () => {
 				<div className='flex mt-6'>
 					<FilterSection />
 					<div className='w-3/4'>
-						<div className=''>
+						<div className='flex items-center gap-4'>
 							<p>300 Products</p>
-							<select>
-								<option value='10'>10</option>
+							<select className='p-2 bg-green-800 text-white'>
+								<option value='10'>SORT BY</option>
 							</select>
 						</div>
 						<ul className='grid grid-cols-3'>

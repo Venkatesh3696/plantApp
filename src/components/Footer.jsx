@@ -1,8 +1,9 @@
-import React from 'react';
+import { FaInstagram, FaThreads } from 'react-icons/fa6';
+import { FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
 	return (
-		<footer className='bg-[#F0FFE5] flex flex-col px-28 py-4'>
+		<footer className='bg-[#F0FFE5] flex flex-col px-28 py-4 gap-4'>
 			<div className='grid grid-cols-5 gap-6'>
 				<div className='flex flex-col '>
 					<h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
@@ -80,12 +81,22 @@ const Footer = () => {
 					iste deleniti et porro aspernatur.
 				</p>
 				<h1>Follow us on </h1>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul className='flex gap-4'>
+					<li>
+						<FaInstagram />
+					</li>
+					<li>
+						<FaFacebook />
+					</li>
+					<li>
+						<FaThreads />
+					</li>
+					<li>
+						<FaYoutube />
+					</li>
+					<li>
+						<FaLinkedin />
+					</li>
 				</ul>
 			</div>
 
